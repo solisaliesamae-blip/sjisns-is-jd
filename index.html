@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Message for My Love</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+    body, html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        overflow: hidden;
+        background: #000;
+        font-family: 'Great Vibes', serif;
+    }
+
+    .slide {
+        position: absolute;
+        inset: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        opacity: 0;
+        transform: scale(0.88) rotateY(15deg);
+        transition: opacity 1.2s ease, transform 1.2s ease;
+    }
+
+    .active {
+        opacity: 1;
+        transform: scale(1) rotateY(0deg);
+        z-index: 5;
+    }
+
+    .slide::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        z-index: -3;
+        filter: blur(18px) brightness(0.45);
+        transform: scale(1.1);
+    }
+
+    .clear-bg {
+        position: absolute;
+        inset: 0;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        z-index: -1;
+    }
+
+    .s1 .clear-bg { background-image: url('2.jpeg'); }
+    .s2 .clear-bg { background-image: url('3.jpeg'); }
+    .s3 .clear-bg { background-image: url('3.jpeg'); }
+    .s4 .clear-bg { background-image: url('3.jpeg'); }
+    .s5 .clear-bg { background-image: url('4.jpeg'); }
+
+    .text, .text1 {
+        position: relative;
+        z-index: 10;
+        text-align: center;
+        max-width: 85%;
+        max-height: 70vh;
+        overflow-y: auto;
+        color: #ffffff;
+        font-size: 2.6rem; /* Larger text */
+        font-weight: 400;
+        font-family: 'Great Vibes', serif;
+        animation: fadeIn 1.8s ease;
+        text-shadow: 2px 2px 12px rgba(0,0,0,0.7);
+        padding: 25px;
+        background: rgba(0,0,0,0.28);
+        border-radius: 14px;
+        line-height: 1.4; /* Better readability */
+    }
+
+    .text span {
+        display: block;
+        font-family: 'Great Vibes', cursive;
+        font-size: 4.5rem; /* Bigger title */
+        color: #ffb3c6;
+        margin-bottom: 15px;
+        text-shadow: 3px 3px 18px rgba(0,0,0,0.85);
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(25px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+
+    .btn {
+        position: absolute;
+        bottom: 20px;
+        padding: 14px 26px;
+        background: rgba(255, 255, 255, 0.85);
+        border: none;
+        border-radius: 12px;
+        cursor: pointer;
+        font-size: 1.4rem;
+        font-weight: 600;
+        transition: 0.3s;
+        z-index: 9999;
+    }
+
+    .btn:hover { background: #fff; }
+    .btn:disabled { opacity: 0.45; cursor: not-allowed; }
+
+    #backBtn { left: 20px; }
+    #nextBtn { right: 20px; }
+
+    /* MOBILE FIXES */
+    @media (max-width: 600px) {
+        .text, .text1 {
+            font-size: 1.9rem;        /* Large but still fits on mobile */
+            max-height: 65vh;
+            padding: 18px;
+        }
+
+        .text span {
+            font-size: 3.2rem;
+        }
+
+        .btn {
+            font-size: 1rem;
+            padding: 10px 18px;
+        }
+    }
+</style>
+</head>
+
+<body>
+
+<div class="slide s1 active">
+    <div class="clear-bg"></div>
+    <div class="text">
+        <span>My always baby</span>
+        Hi my Jay-r Fidel D. Sareno this message is just for you. I hope kiligon ka gors dapat lng eme lng
+    </div>
+</div>
+
+<div class="slide s2">
+    <div class="clear-bg"></div>
+    <div class="text1">
+        I was just thinking about us and how far we’ve come. It’s been 3 years and 2 months now, and even though we can’t see each other as often as we’d like, every moment we do share calls, texts, and moment we share means so much to me.
+
+        I know LDR aren’t easy, and we’ve had our share of struggles, but I truly feel that every challenge we face makes us stronger and brings us closer in ways that distance can’t break. Thank you for always being there and for loving me even from far away.
+    </div>
+</div>
+
+<div class="slide s3">
+    <div class="clear-bg"></div>
+    <div class="text1">
+        Even when no one else understands me, you’re the one I can truly open my heart to. With you, I never have to hide who I am or pretend to be someone else. You listen to me, you care for me, and you love me in a way that feels real and safe. When I’m with you, I feel protected, valued, and completely understood. You make me feel seen in a way no one ever has, and that means everything to me. Thank you for being you, and for loving me the way you do. I love you more than words can say.
+    </div>
+</div>
+
+<div class="slide s4">
+    <div class="clear-bg"></div>
+    <div class="text1">
+        I just wanted to tell you how much I appreciate you. Even though we’re far apart, I feel your love every day, and it makes me so happy. I love the way you care about me and make me feel special, even from so far away.
+
+        I miss you a lot, but thinking about you always makes me smile because you're so handsome my love as always. You are my favorite person, and I feel so lucky to have you in my life. I can’t wait until we can be together again. Until then, I promise to keep loving you, supporting you.
+    </div>
+</div>
+
+<div class="slide s5">
+    <div class="clear-bg"></div>
+    <div class="text1">
+        I’ve been thinking about our future a lot. Even though we’re far apart, I really believe in us and what we’re building together. I can’t wait for the day we’re finally closer, living our dreams, and reaching our goals together. I know it won’t always be easy, but I’m willing to keep trying with you. I love you and I’m proud of us. Baby, don't forget to rest and take care of yourself if you're tired please have some rest okay? mwuaps (no emojis mona kunware demure)
+    </div>
+</div>
+
+<button class="btn" id="backBtn">◀ Back</button>
+<button class="btn" id="nextBtn">Next ▶</button>
+
+<script>
+    const slides = document.querySelectorAll(".slide");
+    const nextBtn = document.getElementById("nextBtn");
+    const backBtn = document.getElementById("backBtn");
+
+    let current = 0;
+
+    function updateButtons() {
+        backBtn.disabled = current === 0;
+        nextBtn.disabled = current === slides.length - 1;
+    }
+
+    function showSlide(index) {
+        slides.forEach(slide => slide.classList.remove("active"));
+        slides[index].classList.add("active");
+        updateButtons();
+    }
+
+    nextBtn.addEventListener("click", () => {
+        if (current < slides.length - 1) {
+            current++;
+            showSlide(current);
+        }
+    });
+
+    backBtn.addEventListener("click", () => {
+        if (current > 0) {
+            current--;
+            showSlide(current);
+        }
+    });
+
+    updateButtons();
+</script>
+
+</body>
+</html>
